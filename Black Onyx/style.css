@@ -4,11 +4,11 @@
 VARIABLES
 */
 :root{
-    --lazuli-color: #243e92;
+    --onyx-color: #202224;
     --gold-color: gold;
     --azure-color: azure;
-    --background-color: #e1f0ef;
-    --h1-hover-color: #243e92;
+    --background-color: #d8e1e8;
+    --h1-hover-color: rgb(37, 37, 37);
     --prime-structure-size: 960px;
     --universal-box-shadow: 1px 1px 5px 1px #0000004c;
 }
@@ -24,29 +24,38 @@ body{
 
 
 
-
+/*
+HEADER SETTINGS
+*/
 header{
-    background-color: var(--lazuli-color);
     width: var(--prime-structure-size);
     box-shadow: var(--universal-box-shadow);
     margin: 0px auto 0px auto;
+    position: relative;
 }
+/*
+WEBSITE TITLE SETTINGS
+*/
 header > h1{
+    background-color: var(--onyx-color);
     color: var(--azure-color);
-    margin: 0px;
-    padding: 8px 20px;
+    position: absolute;
+    top: 120px;
+    left: 25px;
+    padding: 5px;
+    border-radius: 2px;
 }
 header > h1:hover{
     color: var(--gold-color);
 }
 header > img{
    width: 100%;
+   height: 100%;
+   margin-bottom: -3px;
 }
 
-
-
 nav{
-    background-color: var(--lazuli-color);
+    background-color: var(--onyx-color);
     width: var(--prime-structure-size);
     box-shadow: var(--universal-box-shadow);
     margin-right: auto;
@@ -76,16 +85,9 @@ nav > a:hover{
 */
 .container{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    box-shadow: var(--universal-box-shadow);    
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: var(--universal-box-shadow);
 }
-.sidebar{
-    margin-left: 15px;
-}
-.sidebar > article > img{
-    width: 100%;
-}
-
 
 
 /*
@@ -106,7 +108,10 @@ section > article{
     padding: 2px 15px 15px 15px;    
 }
 article > h1{
-    background-color: var(--lazuli-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    text-align: left;
+    background-color: var(--onyx-color);
     color: var(--azure-color);
     box-shadow: var(--universal-box-shadow);
     padding: 5px;    
@@ -121,7 +126,14 @@ article > img:hover{
 aside{
     margin-top: 8px;
     text-align: end;
+    padding: 2px;
     background-color: var(--background-color);
+    box-shadow: 1px 1px 1px 1px #0000004a;
+}
+aside:hover{
+    background-color: var(--onyx-color);
+    color: var(--azure-color);
+    box-shadow: 1px 1px 1px 1px #0000004a;
 }
 
 
@@ -129,6 +141,7 @@ aside{
 /*
 FLEX-BOX (TO INSERT IMAGES IN THE SAME ROW)
 */
+
 span{
     display: flex;
     flex-direction: row;
@@ -153,7 +166,7 @@ span > p:hover{
     overflow-y: scroll;
 }
 img{
-    width: 250px;
+    width: 100%;
     height: 100%;
 }
 
@@ -202,7 +215,7 @@ footer{
 footer > p{
     padding: 25px;
     color: var(--azure-color);
-    background-color: var(--lazuli-color);
+    background-color: var(--onyx-color);
     box-shadow: var(--universal-box-shadow);    
 }
 footer > p:hover{
