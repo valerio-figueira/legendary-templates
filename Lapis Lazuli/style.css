@@ -27,16 +27,14 @@ body{
 
 header{
     background-color: var(--lazuli-color);
-    margin: 0px auto;
     width: var(--prime-structure-size);
     box-shadow: var(--universal-box-shadow);
-    border: 1px solid black;
+    margin: 0px auto 0px auto;
 }
 header > h1{
     color: var(--azure-color);
-    margin-top: 0px;
-    padding-left: 15px; 
-    padding-bottom: 8px;
+    margin: 0px;
+    padding: 8px 20px;
 }
 header > h1:hover{
     color: var(--gold-color);
@@ -49,14 +47,14 @@ header > img{
 
 nav{
     background-color: var(--lazuli-color);
+    width: var(--prime-structure-size);
+    box-shadow: var(--universal-box-shadow);
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 15px;
-    margin-top: 0px;
+    margin-top: 10px;
     padding-top: 13px;
-    padding-bottom: 13px;
-    width: var(--prime-structure-size);
-    box-shadow: var(--universal-box-shadow);
+    padding-bottom: 13px;    
 }
 nav > a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -74,7 +72,7 @@ nav > a:hover{
 
 
 /*
-[GRID] - CONTAINER BOX WITH CHILDRENS CONTENTS AND SIDEBAR
+[GRID] - CONTAINER BOX WITH CHILDREN CONTENTS AND SIDEBAR
 */
 .container{
     display: grid;
@@ -95,23 +93,23 @@ MAIN STRUCTURE AND VALUES INHERITED BY THEIR CHILDREN SECTIONS, ARTICLES, ETC.
 */
 main{
     background-color: var(--background-color);
-    margin: 8px auto;
     width: var(--prime-structure-size);
+    margin: 8px auto;    
 }
 main > section{
     padding: 15px;
 }
 section > article{
     background-color: var(--azure-color);
-    margin: 10px auto 20px auto;
-    padding: 2px 15px 15px 15px;
     box-shadow: var(--universal-box-shadow);
+    margin: 10px auto 20px auto;
+    padding: 2px 15px 15px 15px;    
 }
 article > h1{
     background-color: var(--lazuli-color);
     color: var(--azure-color);
-    padding: 5px;
     box-shadow: var(--universal-box-shadow);
+    padding: 5px;    
 }
 article > h1:hover{
     background-color: var(--gold-color);
