@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 /*
 VARIABLES
 */
@@ -10,13 +14,13 @@ VARIABLES
     --background-color: #d8e1e8;
     --h1-hover-color: rgb(37, 37, 37);
     --prime-structure-size: 960px;
-    --universal-box-shadow: 1px 1px 5px 1px #0000004c;
+    --universal-box-shadow: 0px 0px 3px 1px #00000055;
 }
 
 
 
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: var(--azure-color);
     text-align: justify;
     font-size: medium;
@@ -37,22 +41,38 @@ header{
 WEBSITE TITLE SETTINGS
 */
 header > h1{
+    font-family: 'Work Sans', sans-serif;
     background-color: var(--onyx-color);
     color: var(--azure-color);
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 25px;
     padding: 5px;
-    border-radius: 2px;
+    border-radius: 1px;
 }
 header > h1:hover{
+    color: var(--gold-color);
+}
+p#subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    top: 160px;
+    left: 25px;
+    padding: 0px 5px 0px 5px;
+    color: var(--azure-color);
+    background-color: var(--onyx-color);
+    font-size: large;
+}
+p#subtitle:hover{
     color: var(--gold-color);
 }
 header > img{
    width: 100%;
    height: 100%;
-   margin-bottom: -3px;
+   margin-bottom: -4px;
 }
+
+
 
 nav{
     background-color: var(--onyx-color);
@@ -61,7 +81,7 @@ nav{
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 15px;
-    margin-top: 10px;
+    margin-top: 11px;
     padding-top: 13px;
     padding-bottom: 13px;    
 }
@@ -80,6 +100,7 @@ nav > a:hover{
 
 
 
+
 /*
 [GRID] - CONTAINER BOX WITH CHILDREN CONTENTS AND SIDEBAR
 */
@@ -88,6 +109,7 @@ nav > a:hover{
     grid-template-columns: 1fr 1fr 1fr;
     box-shadow: var(--universal-box-shadow);
 }
+
 
 
 /*

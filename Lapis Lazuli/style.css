@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 /*
 VARIABLES
 */
@@ -10,13 +14,14 @@ VARIABLES
     --background-color: #e1f0ef;
     --h1-hover-color: #243e92;
     --prime-structure-size: 960px;
-    --universal-box-shadow: 1px 1px 5px 1px #0000004c;
+    /*--universal-box-shadow: 1px 1px 5px 1px #0000004c;*/
+    --universal-box-shadow: 0px 0px 3px 1px #00000055;
 }
 
 
 
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: var(--azure-color);
     text-align: justify;
     font-size: medium;
@@ -32,9 +37,10 @@ header{
     margin: 0px auto 0px auto;
 }
 header > h1{
+    font-family: 'Work Sans', sans-serif;
     color: var(--azure-color);
     margin: 0px;
-    padding: 8px 20px;
+    padding: 4px 20px;
 }
 header > h1:hover{
     color: var(--gold-color);
@@ -57,7 +63,8 @@ nav{
     padding-bottom: 13px;    
 }
 nav > a{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
     color: var(--azure-color);
     text-decoration: none;
     margin-left: 10px;
@@ -119,9 +126,15 @@ article > img:hover{
     box-shadow: var(--universal-box-shadow);
 }
 aside{
+    padding: 3px;
     margin-top: 8px;
     text-align: end;
     background-color: var(--background-color);
+    box-shadow: 1px 1px 2px 1px #0000002f;
+}
+aside:hover{
+    background-color: var(--lazuli-color);
+    color: var(--azure-color);
 }
 
 
