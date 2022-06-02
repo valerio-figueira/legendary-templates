@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root{
-    --primary-color: #214f39;
+    --primary-color: #0c6a3d;
     --secondary-color: azure;
     --tertiary-color: #D6D58E;
     --background-color: azure;
@@ -15,7 +15,7 @@
 }
 /*#d4e3f6*/
 /*#024959*/
-
+/*#214f39   (green)*/
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
@@ -50,16 +50,16 @@ header{
     flex-direction: row;
     position: relative;
 }
+header a{
+    text-decoration: none;
+}
 header h1{
     margin: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 26px;
-}
-header h1 > a{
     color: var(--secondary-color);
-    text-decoration: none;
 }
-header h1 > a:hover{
+header h1:hover{
     color: var(--tertiary-color);
     text-decoration: none;
 }
@@ -102,9 +102,16 @@ nav a:hover{
     background-color: var(--secondary-color);
     color: var(--primary-color);
     box-shadow: var(--blue-shadow);
-    transition: 0.4s ease;
+    transition: 0.4s ease-in-out;
 }
-
+@keyframes fadeIn{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
 
 
 
@@ -182,9 +189,6 @@ article p{
     margin-right: 10px;
     width: 40%;
     height: 100%;
-}
-.contents article img:hover{
-    transition: 0.4s ease;
     box-shadow: var(--shadow);
 }
 aside{
@@ -195,10 +199,6 @@ aside{
     margin-bottom: 12px;
     width: 100%;
     height: 100%;
-    box-shadow: var(--shadow);
-}
-.sidebar article img:hover{
-    transition: 0.4s ease;
     box-shadow: var(--shadow);
 }
 
@@ -382,7 +382,8 @@ HOLERITE
 .transparencia img{
     position: absolute;
     top: 9px;
-    left: 186px;
-    width: 50px;
+    left: 196px;
+    width: 56px;
     height: 50px;
+    overflow: hidden;
 }

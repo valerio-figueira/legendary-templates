@@ -1,23 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GRID</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+      function colorChange(){
+        box1 = document.querySelector('.one')
+        box1.style.background = 'goldenrod'
+      }
+    </script>
 </head>
 <body>
     <div class="main">
         <h1>1st GRID:</h1>
         <div class="wrapper">
-            <div class="one">One</div>
+            <div class="one" onclick="colorChange()">One</div>
             <div class="two">Two</div>
             <div class="three">Three</div>
             <div class="four">Four</div>
             <div class="five">Five</div>
             <div class="six">Six</div>
           </div>
+          <script>
+            var box3 = document.querySelector('.three')
+            box3.addEventListener('click', clicar)
+            box3.addEventListener('mouseout', sair)
+            box3.addEventListener('mouseenter', entrar)
+          function clicar(){
+            box3.style.background = 'midnightblue'
+          }
+          function entrar(){
+            box3.style.background = 'green'
+          }
+          function sair(){
+            box3.style.background = 'brown'
+          }          
+        </script>
     </div>
       <div class="main">
           <h1>2nd GRID: </h1>
