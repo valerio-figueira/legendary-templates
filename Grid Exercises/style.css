@@ -53,35 +53,56 @@
   }
 
   
-  .container{
-      grid-template-columns: 3fr 2fr;
-      grid-template-rows: repeat(5, 100px);
-      display: grid;
-      margin: 50px auto;
-      width: 60%;
-      background-color: azure;
-  }
-    .box1{      
-    grid-column: 1;
-    grid-row: 1;
-  }
-    .box2{      
-    grid-column: 1;
-    grid-row: 2;
+.container{
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(5, 100px);
+    display: grid;
+    margin: 50px auto;
+    width: 60%;
+    background-color: azure;
 }
-    .box3{      
-    grid-column: 1;
-    grid-row: 3;
+.box1{      
+  grid-column: 1;
+  grid-row: 1;
 }
-    .box4{      
-    grid-column: 1;
-    grid-row: 4;
+.box2{      
+  grid-column: 1;
+  grid-row: 2;
 }
-    .box5{      
-    grid-column: 1;
-    grid-row: 5;
+.box3{      
+  grid-column: 1;
+  grid-row: 3;
 }
-    .box6{      
-    grid-column: 2;
-    grid-row: 1 / 6;
+.box4{      
+  grid-column: 1;
+  grid-row: 4;
+}
+.box5{      
+  grid-column: 1;
+  grid-row: 5;
+}
+.box6{      
+  grid-column: 2;
+  grid-row: 1 / 6;
+}
+
+
+.four{
+  width: 0px;
+  height: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid brown;
+  background-color: #f0ffff00;
+}
+
+
+input{
+  margin: 6px;
+}
+div button{
+  margin: 8px;
+}
+div p{
+  display: inline;
 }
